@@ -1,0 +1,10 @@
+.\joystick.o: Joystick.c
+.\joystick.o: D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h
+.\joystick.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\joystick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\joystick.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\joystick.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\joystick.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\joystick.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
+.\joystick.o: D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h
+.\joystick.o: Joystick.h

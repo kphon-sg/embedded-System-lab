@@ -1,0 +1,15 @@
+.\main.o: main.c
+.\main.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
+.\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\main.o: D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h
+.\main.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h
+.\main.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\main.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\main.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\main.o: D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
+.\main.o: D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h
+.\main.o: Uart.h
+.\main.o: Joystick.h
+.\main.o: Led.h
+.\main.o: ADC.h

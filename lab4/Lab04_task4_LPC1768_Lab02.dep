@@ -1,0 +1,73 @@
+Dependencies for Project 'Lab04_task4', Target 'LPC1768_Lab02': (DO NOT MODIFY !)
+F (.\Joystick.c)(0x5DAC13E4)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\joystick.o --omf_browse .\joystick.crf --depend .\joystick.d)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h)(0x5848EB32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8EDF32)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8314D2)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EDF32)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h)(0x5848EB32)
+I (Joystick.h)(0x5DAC13E6)
+F (.\Led.c)(0x5DAC13EA)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h)(0x5848EB32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8EDF32)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8314D2)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EDF32)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h)(0x5848EB32)
+I (Led.h)(0x5DAC13EB)
+F (.\main.c)(0x5DAC13ED)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x5C8A328C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC7840C)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h)(0x5848EB32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8314D2)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EDF32)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h)(0x5848EB32)
+I (Uart.h)(0x5DAC13F5)
+I (Joystick.h)(0x5DAC13E6)
+I (Led.h)(0x5DAC13EB)
+I (ADC.h)(0x5DAC13E3)
+F (.\Uart.c)(0x5DAC13F4)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h)(0x5848EB32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8EDF32)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8314D2)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EDF32)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h)(0x5848EB32)
+I (uart.h)(0x5DAC13F5)
+F (.\ADC.c)(0x5DAC13E4)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\adc.o --omf_browse .\adc.crf --depend .\adc.d)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h)(0x5848EB32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8EDF32)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8314D2)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EDF32)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h)(0x5848EB32)
+I (ADC.h)(0x5DAC13E3)
+F (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib)(0x5E8EDF3A)()
+F (RTE\CMSIS\RTX_Conf_CM.c)(0x5DAC15BE)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\rtx_conf_cm.o --omf_browse .\rtx_conf_cm.crf --depend .\rtx_conf_cm.d)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x5C8A328C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC7840C)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h)(0x5E8314DC)
+F (RTE\Device\LPC1768\RTE_Device.h)(0x5DAC16EF)()
+F (RTE\Device\LPC1768\startup_LPC17xx.s)(0x5DAC16EF)(--cpu Cortex-M3 --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "LPC175x_6x SETA 1"--list .\startup_lpc17xx.lst --xref -o .\startup_lpc17xx.o --depend .\startup_lpc17xx.d)
+F (RTE\Device\LPC1768\system_LPC17xx.c)(0x5DAC16EF)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_LPC1768_Lab02-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC-ID:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DLPC175x_6x-o .\system_lpc17xx.o --omf_browse .\system_lpc17xx.crf --depend .\system_lpc17xx.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC7840C)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\LPC17xx.h)(0x5848EB32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8314D2)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EDF32)
+I (D:\Keil_package_install\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EDF32)
+I (D:\Keil_package_install\Keil\LPC1700_DFP\2.5.0\Device\Include\system_LPC17xx.h)(0x5848EB32)
