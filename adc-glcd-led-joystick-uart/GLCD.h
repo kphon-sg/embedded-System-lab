@@ -1,8 +1,16 @@
-#ifndef GLCD_H
-#define GLCD_H
+#include "GLCD.h"
 
-void GLCD_Initialize(void);
-void GLCD_Clear(void);
-void GLCD_DisplayString(int x, int y, char* str);
+void GLCD_Initialize(void) {
+    GLCD_Init();
+    GLCD_SetBackgroundColor(Black);
+    GLCD_SetForegroundColor(White);
+    GLCD_ClearScreen();
+}
 
-#endif
+void GLCD_Clear(void) {
+    GLCD_ClearScreen();
+}
+
+void GLCD_DisplayString(int x, int y, char* str) {
+    GLCD_DisplayString(x, y, 1, (unsigned char *)str);
+}

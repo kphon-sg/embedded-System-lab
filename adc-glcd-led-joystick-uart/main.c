@@ -2,58 +2,41 @@
 #include "ADC.h"
 #include "GLCD.h"
 #include "UART.h"
-#include <string.h> // Needed for strlen()
-#include "LPC17xx.h"
+#include <string.h>
 
 // Global variables
 extern unsigned int UART_Buffer_Count;
 extern unsigned char UART_Buffer[BUFFER_SIZE];
 
+// Toggle LED on specified port and pin
 void LED_Toggle(uint32_t port, uint32_t pin) {
     if (port == 1) {
-        if (LPC_GPIO1->FIOPIN & (1 << pin)) { // Check if LED is on
-            LPC_GPIO1->FIOCLR = (1 << pin);   // Turn off
+        if (LPC_GPIO1->FIOPIN & (1 << pin)) {
+            LPC_GPIO1->FIOCLR = (1 << pin);
         } else {
-            LPC_GPIO1->FIOSET = (1 << pin);   // Turn on
+            LPC_GPIO1->FIOSET = (1 << pin);
         }
     } else if (port == 2) {
-        if (LPC_GPIO2->FIOPIN & (1 << pin)) { // Check if LED is on
-            LPC_GPIO2->FIOCLR = (1 << pin);   // Turn off
+        if (LPC_GPIO2->FIOPIN & (1 << pin)) {
+            LPC_GPIO2->FIOCLR = (1 << pin);
         } else {
-            LPC_GPIO2->FIOSET = (1 << pin);   // Turn on
+            LPC_GPIO2->FIOSET = (1 << pin);
         }
     }
 }
 
-// Modified LED_Control function to toggle LEDs
+// Control LEDs based on UART command
 void LED_Control(char command) {
     switch (command) {
-        case '0':
-            LED_Toggle(1, 28); // Toggle LED on P1.28
-            break;
-        case '1':
-            LED_Toggle(1, 29); // Toggle LED on P1.29
-            break;
-        case '2':
-            LED_Toggle(1, 31); // Toggle LED on P1.31
-            break;
-        case '3':
-            LED_Toggle(2, 2);  // Toggle LED on P2.2
-            break;
-        case '4':
-            LED_Toggle(2, 3);  // Toggle LED on P2.3
-            break;
-        case '5':
-            LED_Toggle(2, 4);  // Toggle LED on P2.4
-            break;
-        case '6':
-            LED_Toggle(2, 5);  // Toggle LED on P2.5
-            break;
-        case '7':
-            LED_Toggle(2, 6);  // Toggle LED on P2.6
-            break;
-        default:
-            break;
+        case '0': LED_Toggle(1, 28); break; // P1.28
+        case '1': LED_Toggle(1, 29); break; // P1.29
+        case '2': LED_Toggle(1, 31); break; // P1.31
+        case '3': LED_Toggle(2, 2);  break; // P2.2
+        case '4': LED_Toggle(2, 3);  break; // P2.3
+        case '5': LED_Toggle(2, 4);  break; // P2.4
+        case '6': LED_Toggle(2, 5);  break; // P2.5
+        case '7': LED_Toggle(2, 6);  break; // P2.6
+        default: break;
     }
 }
 
@@ -68,33 +51,33 @@ int main(void) {
 
         if (ADC_ConversionDone()) {
             ADC_DisplayValue(); // Display ADC value on GLCD
-            // Also send ADC value via UART inside ADC_DisplayValue() if needed
         }
 
         int joystickStatus = GPIO_ReadJoystick(); // Read joystick status
-
         switch (joystickStatus) {
-            case 1: // Joystick pulled up
-                UART_Send("International University", strlen("International University"));
+            case 1: // Up
+                UART_Send("International University\r\n", strlen("International University\r\n"));
                 break;
-            case 2: // Joystick pulled down
-                UART_Send("Electrical Engineering", strlen("Electrical Engineering"));
+            case 2: // Down
+                UART_Send("Electrical Engineering\r\n", strlen("Electrical Engineering\r\n"));
                 break;
-            case 3: // Joystick pulled left
-                UART_Send("Embedded System", strlen("Embedded System"));
+            case 3: // Left
+                UART_Send("Embedded System\r\n", strlen("Embedded System\r\n"));
                 break;
-            case 4: // Joystick pulled right
-                UART_Send("Your Name", strlen("Your Name"));
+            case 4: // Right
+                UART_Send("Your Name\r\n", strlen("Your Name\r\n"));
                 break;
-            default:
-                break;
+            default: break;
         }
-				
-        if (UART_Buffer_Count > 0) {
-					char received = UART_Buffer[0]; // Get first received character
-					UART_Buffer_Count = 0;           // Clear buffer count
 
-					LED_Control(received); // Call LED control based on received character
-				}
+        // Process all characters in UART buffer
+        while (UART_Buffer_Count > 0) {
+            char received = UART_Buffer[0];
+            for (int i = 0; i < UART_Buffer_Count - 1; i++) {
+                UART_Buffer[i] = UART_Buffer[i + 1]; // Shift buffer left
+            }
+            UART_Buffer_Count--;
+            LED_Control(received); // Toggle LED based on received character
+        }
     }
 }
